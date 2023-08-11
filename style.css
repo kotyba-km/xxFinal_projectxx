@@ -1,0 +1,449 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+html,body
+{
+overflow-x: hidden;
+scroll-behavior: smooth;
+}
+.background
+{
+    background: rgba(41, 0, 116, 0.317);
+background: linear-gradient(152deg, rgba(41,0,116,1) 0%, rgba(18,0,51,1) 27%, rgba(18,0,51,1) 73%, rgba(41,0,116,1) 100%);
+background-size: contain;
+}
+#particles-js
+{
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+}
+
+.spinn
+{
+  animation: spin 4s infinite forwards linear;
+}
+@keyframes spin {
+  from{
+    rotate: 0;
+  }
+  to{
+    rotate: 1turn;
+  }
+}
+.containery
+{
+  z-index: 5;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 100%;
+  margin: 0 auto;
+  transition: all 500ms ease-in-out;
+}
+.btn
+{
+    background: rgb(149,0,255);
+background: linear-gradient(152deg, rgba(149,0,255,1) 0%, rgba(90,0,255,1) 100%);
+border: none;
+transform: skew(-20deg);
+width: 130px;
+
+}
+.btn2-2
+{
+  background: rgb(149,0,255);
+  background: linear-gradient(152deg, rgba(149,0,255,1) 0%, rgba(90,0,255,1) 100%);
+  height: 300px;
+  letter-spacing: 10px;
+}
+.pp p:nth-of-type(1){
+  padding-top: 20px;
+}
+.btn2
+{
+    background: rgb(149,0,255);
+    background: linear-gradient(152deg, rgba(149,0,255,1) 0%, rgba(90,0,255,1) 100%);
+    border: none;
+    width: 130px;
+    height: 50px;
+}
+.btn3
+{
+    background: rgb(94,246,255);
+background: linear-gradient(152deg, rgba(94,246,255,1) 0%, rgba(0,255,154,1) 100%);
+border: none;
+width: 200px;
+height: 50px;
+}
+.btn3-2
+{
+ 
+  display: block;
+  background: rgb(94,246,255);
+  background: linear-gradient(152deg, rgba(94,246,255,1) 0%, rgba(0,255,154,1) 100%);
+  border: none;
+  width: 200px;
+  height: 50px;
+  margin: 20px auto;
+  padding-top: 15px;
+}
+.crd{
+    background-color: transparent;
+    box-shadow: none;
+}
+.btn4
+{
+    background: rgb(94,246,255);
+    background: linear-gradient(152deg, rgba(94,246,255,1) 0%, #00ff9a 100%);
+    border: none;
+    width: 60px;
+    height: 60px;
+    animation: flaot 3s infinite alternate ease-in-out ;
+    transition: all 0.5s ease-in-out ;
+    z-index: 2;
+    }
+    .btn4 img
+    {
+        z-index: 2;
+    }
+    
+.btn4:before {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(-33deg, #00f0b4 -7%, #00eeff 106% );
+    transform: translate3d(0px, 0px, 0) scale(1.31);
+    filter: blur(1px);
+    opacity: var(1);
+    transition: opacity 0.3s;
+    border-radius: inherit;
+    animation: exband 1s infinite alternate ease-in-out ;
+}
+
+/* 
+* Prevents issues when the parent creates a 
+* stacking context. (For example, using the transform
+* property )
+*/
+.btn4::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    border-radius: inherit;
+}
+        
+        
+    @keyframes flaot {
+        0%{
+            bottom: 0;
+        }
+        25%{
+            bottom: 25px;
+        }
+        75%{
+            bottom: 25px;
+        }
+        100%{
+            bottom: 0;
+        }
+    }
+    @keyframes exband {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0.5;
+            transform: scale(1.4);
+        }
+        100%{
+            opacity: 0.8;
+           transform: scale(1.2);
+        }
+    }
+    .divider
+    {
+        width: 80px;
+        background: rgb(149,0,255);
+    background: linear-gradient(152deg, rgba(149,0,255,1) 0%, rgba(90,0,255,1) 100%);
+    }
+    .background2
+    {
+        background-color: #1a0046;
+    }
+    /* Style the tab */
+.tab {
+    overflow: hidden;
+  margin: 0 auto;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    font-size: larger;
+    color: rgb(255, 255, 255);
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+  cursor: pointer;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active1 {
+    border-bottom: rgb(149,0,255) 2px solid;
+    color: white;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+  }
+  .tabcontent {
+    animation: fadeEffect 1s; /* Fading effect takes 1 second */
+  }
+  
+  /* Go from zero to full opacity */
+  @keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+  li
+  {
+    list-style:circle;
+    color: aqua;
+  }
+  .background3
+  {
+    background-color: rgb(41,0,116);
+    border: 1px #2b59ff9d solid;
+  } 
+  .imagine
+  {
+    width: 130px;
+    height: 130px;
+    border: #00eeff 1px solid;
+    border-radius: 50%;
+  }
+  .round
+  {
+    border-radius: 50%;
+  }
+  /* Style the buttons that are used to open and close the accordion panel */
+
+.accordion {
+ 
+    background-color: rgb(41,0,116);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #2b59ff9d ;
+    border-bottom: none;
+    outline: none;
+    transition: 0.4s;
+    display: block;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .accordion:hover {
+   cursor: pointer;
+  }
+  
+  /* Style the accordion panel. Note: hidden by default */
+  .panel {
+    
+    padding: 0 18px;
+    background-color: rgb(41,0,116);
+    display: none;
+    overflow: hidden;
+  }
+  .accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #2b59ff9d;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+    color: #2b59ff9d;
+    
+  }
+  .panel {
+    color: white;
+    padding: 0 18px;
+    background-color: rgb(41,0,116);
+    border: #2b59ff9d 1px solid;
+    border-top: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    border-radius: 0;
+  }
+ .cardt
+ {
+  background-color: rgba(255, 0, 0, 0);
+  width: 1000px;
+  height: 250px;
+ }
+ .cardt:hover
+ {
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.142);
+ }
+ form input,textarea
+ {
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 3px solid rgba(255, 253, 253, 0.467);
+  width: 70%;
+  height: 75px;
+  font-size: larger;
+  position: relative;
+  left: 50%;
+  transform: translatex(-53%);
+  margin: 0px;
+  color: white;
+  font-weight: 700;
+ }
+ input:focus-visible
+ {
+  outline: none;
+  border: none;
+  border-bottom: #00f0b4 3px solid;
+  transition: all 300ms ease-in-out;
+ }
+ input:focus-visible::-webkit-input-placeholder {
+  color: #00f0b4;
+  position: absolute;
+  transform: translate(-20px,-20px);
+  scale: 50%;
+  transition: all 200ms ease-in-out;
+}
+
+textarea:focus-visible::-webkit-input-placeholder {
+  color: #00f0b4;
+  position: absolute;
+  transform: translate(-20px,-20px);
+  scale: 60%;
+  transition: all 200ms ease-in-out;
+}
+ textarea:focus-visible
+ {
+  color: #00f0b4;
+  outline: none;
+  border: none;
+  border-bottom: #00f0b4 3px solid;
+  transition: all 300ms ease-in-out;
+ }
+ #myProgress {
+  width: 85%;
+  background-color: grey;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+#myBar {
+  width: 0.5%;
+  height: 30px;
+  background: linear-gradient(-33deg, #00f0b4 -7%, #00eeff 106% );
+  border-radius: 20px;
+}
+.container-cyrcle
+{
+  height: 140px;
+  width: 140px;
+  border: rgba(255, 255, 255, 0.063) solid 4px;
+  border-radius: 80%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.avatarr
+{
+  opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+.avatat
+{
+  opacity: 1;
+  transition: all 200ms ease-in-out;
+}
+ .container-cyrcle:hover .avatarr
+{
+opacity: 1;
+}
+.container-cyrcle:hover .avatar
+{
+opacity: 0;
+}
+.container-cyrcle:hover 
+{
+border: 4px solid #00eeffd3;
+}
+.slider-button
+{
+  width: 300px;
+  height: 50px;
+  border-radius: 30px;
+  border: 2px solid #2b59ff9d;
+}
+#scrollipbtn
+{
+  z-index: 5;
+  width: 70px;
+  height: 70px;
+  background-color: #5700d0;
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  display: none;
+  place-items:center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+#scrollipbtn-value
+{
+  position: absolute;
+  z-index: 5;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: block;
+  display: grid;
+  background-color: #1a0046;
+  color: #5700d0;
+  place-items: center;
+  font-size: 35px;
+  font-weight: bolder;
+}
+@media (max-width:420px) {
+  .media-container {
+      display: none;
+  }
+}

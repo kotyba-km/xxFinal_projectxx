@@ -75,7 +75,8 @@ width: 130px;
 }
 .btn3
 {
-    background: rgb(94,246,255);
+ 
+background: rgb(94,246,255);
 background: linear-gradient(152deg, rgba(94,246,255,1) 0%, rgba(0,255,154,1) 100%);
 border: none;
 width: 200px;
@@ -83,7 +84,6 @@ height: 50px;
 }
 .btn3-2
 {
- 
   display: block;
   background: rgb(94,246,255);
   background: linear-gradient(152deg, rgba(94,246,255,1) 0%, rgba(0,255,154,1) 100%);

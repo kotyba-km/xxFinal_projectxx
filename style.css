@@ -1,23 +1,26 @@
 body
 {
+min-width: 100vw;
   margin: 0;
   padding: 0;
   width: 100vw;
 }
 html,body
 {
+  min-width: 100vw;
 overflow-x: hidden;
 scroll-behavior: smooth;
 }
 .background
 {
-    background: rgba(41, 0, 116, 0.317);
+  min-width: 100vw;
+  background: rgba(41, 0, 116, 0.317);
 background: linear-gradient(152deg, rgba(41,0,116,1) 0%, rgba(18,0,51,1) 27%, rgba(18,0,51,1) 73%, rgba(41,0,116,1) 100%);
 background-size: contain;
 }
 #particles-js
 {
-  width: 100vw;
+  max-width: 90vw;
   height: 100%;
   overflow: hidden;
   position: absolute;
@@ -445,5 +448,8 @@ border: 4px solid #00eeffd3;
 @media (max-width:420px) {
   .media-container {
       display: none;
+  }
+  .media-mobile{
+    font-size: 25px !important;
   }
 }

@@ -132,5 +132,13 @@ window.onscroll =function() {
   scrollFunction();
   calcScrollValue();
 }
-
+const menu_btn = document.querySelector(".navbar-burger");
+const menu = document.querySelector('.burger-menu')
+const close_menu = document.querySelector('.close')
+menu_btn.addEventListener('click',function() {
+  menu.classList.add('is-active')
+});
+close_menu.addEventListener('click' ,function(){
+  menu.classList.remove('is-active')
+})
 window.onload = calcScrollValue;
